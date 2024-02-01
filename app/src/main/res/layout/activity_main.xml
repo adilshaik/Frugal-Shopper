@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/frugal_shopper"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColorLink="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Product A -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProductA"
+        android:layout_height="72dp"
+        android:layout_width="390dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/productA"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/a"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputPriceA"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="4"
+            android:hint="@string/price"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/inputPoundsA"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="4"
+            android:hint="@string/pounds"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputOuncesA"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:hint="@string/ounces"
+            android:inputType="number"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <!-- Product B -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProductB"
+        android:layout_height="72dp"
+        android:layout_width="390dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itemB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/b"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputPriceB"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:hint="@string/price"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/inputPoundsB"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:hint="@string/pounds"
+            android:inputType="number"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/inputOuncesB"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:hint="@string/ounces"
+            android:inputType="number"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <!-- Product C -->
+    <LinearLayout
+        android:id="@+id/linearLayoutProductC"
+        android:layout_height="72dp"
+        android:layout_width="390dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itemC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:gravity="center"
+            android:text="@string/c"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputPriceC"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:hint="@string/price"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/inputPoundsC"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:hint="@string/pounds"
+            android:inputType="number"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/inputOuncesC"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="4"
+            android:hint="@string/ounces"
+            android:inputType="number"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/compareFrugalBuy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/compare"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!--Frugal Buy Results-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bestBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/bestBuy"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finalBuyOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text=""
+            android:paddingStart="5sp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+</LinearLayout>
